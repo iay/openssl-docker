@@ -1,8 +1,6 @@
-FROM alpine:3.16
-LABEL maintainer "ian@iay.org.uk"
+FROM  dops-registry.fortinet-us.com/fortidevsecops/cliosca
+FROM  dops-registry.fortinet-us.com/fortidevsecops/celeryworker
+FROM  dops-registry.fortinet-us.com/fortidevsecops/backend
+FROM  dops-registry.fortinet-us.com/fortidevsecops/pgadmin
+FROM  dops-registry.fortinet-us.com/fortidevsecops/registry
 
-#
-# Add packages
-#
-RUN apk add --no-cache \
-	openssl
